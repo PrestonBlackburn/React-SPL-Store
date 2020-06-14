@@ -8,7 +8,7 @@ export default class Details extends Component {
         return (
             <ProductConsumer>
                 {value => {
-                    const{id, type, img, info, price, title, inCart} = value.detailProduct;
+                    const{id, type, report, info, price, title, inCart} = value.detailProduct;
 
                     return (
                         <div className = "container py-5">
@@ -23,7 +23,7 @@ export default class Details extends Component {
                             {/* product info */}
                             <div className = "row">
                                 <div className = "col-10 mx-auto col-md-6 my-3">
-                                    <img src = {img} className = "img-fluid" alt = "product"></img>
+                                    <img src = {report} className = "img-fluid" alt = "product"></img>
                                 </div>
                                 {/* product text*/}
                                 <div className = "col-10 mx-auto col-md-6 my-3 text-capitalize">
@@ -53,7 +53,7 @@ export default class Details extends Component {
                                      cart
                                      disabled={inCart?true:false} onClick = {() =>{
                                         value.addToCart(id);
-                                        value.addtoModel(id);
+                                        value.openModel(id);
                                     }}>
                                         {inCart?'In Cart' : "Add To Cart"}
                                     </ProdButton>
