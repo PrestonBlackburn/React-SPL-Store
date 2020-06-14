@@ -1,38 +1,55 @@
-.App {
-  text-align: center;
+:root {
+  --mainGrey:  rgb(170, 170, 170);
+  --secondaryGrey:  rgba(226, 226, 226, 0.897);
+  --textGrey: #333;
+  --mainWhite: #f3f3f3;
+  --mainBlack: #232528;
+  --mainBlue: rgb(27, 122, 185);
+  --mainYellow: rgba(216, 148, 0, 0.726);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+body {
+  font-family: 'Roboto', sans-serif !important;
+  background-color: var(--mainGrey) !important;
+  color: var(--textGrey) !important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/*   three classes used throught project */
+
+            /* title */
+.text-title{
+  font-family: 'Roboto Slab', sans-serif;
+  letter-spacing: 0.3rem;
+  text-transform: uppercase;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.text-Grey{
+  color: var(--textGrey);
 }
 
-.App-link {
-  color: #61dafb;
+.text-bright{
+  color: var(--secondaryGrey);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn-black {
+  background: transparent;
+  text-transform: capitalize;
+  font-size: 0.8rem !important;
+  color: var(--textGrey) !important;
+  border-radius: 0 !important;
+  border-color: var(--textGrey) !important;
+  border: 0.1rem;
+}
+
+.btn-black:hover{
+  background: var(--secondaryGrey) !important;
+  color: var(--textGrey)
+}
+
+.cart-icon{
+  cursor: pointer;
+  font-size: 1.2rem;
+  color: var(--mainBlue);
+
 }
