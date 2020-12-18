@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
-import logo from '../SPL logo.svg';
+import logo from '../my logo.svg';
 import styled from "styled-components";
 import {CheckoutButton} from './Button';
 
