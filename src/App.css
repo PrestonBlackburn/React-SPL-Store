@@ -1,6 +1,6 @@
 :root {
-  --mainGrey:  rgb(170, 170, 170);
-  --secondaryGrey:  rgba(226, 226, 226, 0.897);
+  --mainGrey:  #eeeeee;
+  --secondaryGrey: #eeeeee;
   --textGrey: #333;
   --mainWhite: #f3f3f3;
   --mainBlack: #232528;
